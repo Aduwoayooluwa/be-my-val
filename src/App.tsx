@@ -51,7 +51,7 @@ export default function App() {
               <motion.h1 
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="text-5xl text-deep-red font-semibold text-center"
+                className="text-3xl lg:text-5xl text-deep-red font-semibold text-center"
               >
                 Will you be my valentine?
               </motion.h1>

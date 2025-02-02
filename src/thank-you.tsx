@@ -23,7 +23,7 @@ export default function ThankYou({
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      className="w-full h-screen grid place-items-center p-6 lg:p-0 overflow-hidden absolute top-0 left-0"
+      className="w-full h-full grid place-items-center p-6 lg:p-0 overflow-hidden absolute top-0 left-0"
       style={{ backgroundColor: colors.background }}
     >
       <motion.div 

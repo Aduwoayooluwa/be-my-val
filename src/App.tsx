@@ -45,7 +45,7 @@ export default function App() {
             initial={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
-            className="bg-[#FFF0F5] w-full h-screen grid place-items-center"
+            className="bg-[#FFF0F5] w-full h-full grid place-items-center"
           >
             <div className="space-y-10 lg:space-y-5">
               <motion.h1 

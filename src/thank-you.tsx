@@ -5,9 +5,6 @@ import toast from "react-hot-toast";
 
 export default function ThankYou({ 
     disableScreen,
-    position,
-    setPosition,
-    getRandomPosition
 
  }: { disableScreen: () => void, position: any, setPosition: (position: any) => void, getRandomPosition: () => any }) {
   const colors = {
@@ -182,11 +179,11 @@ export default function ThankYou({
                     whileTap={{ scale: 1.1 }}
                     onClick={disableScreen}
                     onHoverEnd={() => {
-                        toast(callGodMessage ? "Don't let God know 🥹" : "Don't unfreeze, it's better this way 🥹.")
+                        toast("Don't unfreeze, it's better this way 🥹 ")
                     }}
-                    onHoverStart={() => setPosition(getRandomPosition())}
-                    animate={position}
-                    transition={{ type: "spring", stiffness: 100, damping: 10 }}
+                    whileHover={{ rotate: [-2, 2, -2, 2, 0] }}
+  transition={{ duration: 0.4, repeat: Infinity, repeatDelay: 0.1 }}
+                   
                     className="bg-light-coral text-creamy-white p-5 rounded-md font-semibold text-3xl"
                 >
                    {'Unfreeze my heart 🥹'}
@@ -198,14 +195,13 @@ export default function ThankYou({
             callGodMessage && (
                 <motion.button
                     
-                    whileTap={{ scale: 1.1 }}
+               whileTap={{ scale: 1.1 }}
                     onClick={disableScreen}
-                    onHoverStart={() => setPosition(getRandomPosition())}
-                    animate={position}
                     onHoverEnd={() => {
-                        toast(callGodMessage ? "Don't let God know 🥹" : "Don't unfreeze, it's better this way 🥹.")
+                        toast("Don't call God 🥹 ")
                     }}
-                    transition={{ type: "spring", stiffness: 100, damping: 10 }}
+                    whileHover={{ rotate: [-2, 2, -2, 2, 0] }}
+  transition={{ duration: 0.4, repeat: Infinity, repeatDelay: 0.1 }}
                     className="bg-[#25D366] text-creamy-white p-5 rounded-md font-semibold text-3xl"
                 >
                    {'Call 📞 🥹'}

@@ -179,17 +179,17 @@ export default function ThankYou({
                     whileTap={{ scale: 1.1 }}
                     onClick={disableScreen}
                     onHoverEnd={() => {
-                        toast("Don't unfreeze, it's better this way 🥹 ")
+                        toast("Don't fix, it's better this way 🥹 ")
                     }}
                     onTouchEnd={() => {
-                      toast("Don't unfreeze, it's better this way 🥹 ")
+                      toast("Don't fix, it's better this way 🥹 ")
                   }}
                     whileHover={{ rotate: [-2, 2, -2, 2, 0] }}
   transition={{ duration: 0.4, repeat: Infinity, repeatDelay: 0.1 }}
                    
                     className="bg-light-coral text-creamy-white p-5 rounded-md font-semibold text-3xl"
                 >
-                   {'Unfreeze my heart 🥹'}
+                   {'Fix my screen 🥹'}
                 </motion.button>
             )
         }

@@ -100,6 +100,9 @@ export default function App() {
       </AnimatePresence>
 
      {screenDisabled &&  <button disabled={screenDisabled} className={`absolute inset-0 cursor-wait w-full h-full`}></button>}
+
+
+     <p className="text-deep-red font-medium text-center w-full  absolute bottom-6 mx-auto ">DM <a rel="noreferrer" className="underline" target="_blank" href="https://x.com/codingpastor">Me</a></p>
     </div>
   );
 }

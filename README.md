@@ -28,7 +28,7 @@ To get started with Valentine Pro, follow these steps:
 
 Run the project with the following command:
 ```bash
-npm start
+npm run dev
 ```
 
 ## Contributing

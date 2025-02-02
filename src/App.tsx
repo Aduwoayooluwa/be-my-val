@@ -47,7 +47,7 @@ export default function App() {
             transition={{ duration: 0.5 }}
             className="bg-[#FFF0F5] w-full h-screen grid place-items-center"
           >
-            <div className="space-y-5">
+            <div className="space-y-10 lg:space-y-5">
               <motion.h1 
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -72,6 +72,9 @@ export default function App() {
 
                 <motion.button
             onHoverStart={() => setPosition(getRandomPosition())}
+            onTouchStart={() => setPosition(getRandomPosition())}
+         
+
             animate={position}
             transition={{ type: "spring", stiffness: 100, damping: 10 }}
             className="bg-red-600 text-creamy-white p-5 rounded-md font-semibold text-3xl"

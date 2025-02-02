@@ -23,7 +23,7 @@ export default function ThankYou({
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      className="w-full h-screen grid place-items-center overflow-hidden absolute top-0 left-0"
+      className="w-full h-screen grid place-items-center p-6 lg:p-0 overflow-hidden absolute top-0 left-0"
       style={{ backgroundColor: colors.background }}
     >
       <motion.div 
@@ -181,6 +181,9 @@ export default function ThankYou({
                     onHoverEnd={() => {
                         toast("Don't unfreeze, it's better this way 🥹 ")
                     }}
+                    onTouchEnd={() => {
+                      toast("Don't unfreeze, it's better this way 🥹 ")
+                  }}
                     whileHover={{ rotate: [-2, 2, -2, 2, 0] }}
   transition={{ duration: 0.4, repeat: Infinity, repeatDelay: 0.1 }}
                    
@@ -200,6 +203,9 @@ export default function ThankYou({
                     onHoverEnd={() => {
                         toast("Don't call God 🥹 ")
                     }}
+                    onTouchEnd={() => {
+                      toast("Don't call God 🥹 ")
+                  }}
                     whileHover={{ rotate: [-2, 2, -2, 2, 0] }}
   transition={{ duration: 0.4, repeat: Infinity, repeatDelay: 0.1 }}
                     className="bg-[#25D366] text-creamy-white p-5 rounded-md font-semibold text-3xl"

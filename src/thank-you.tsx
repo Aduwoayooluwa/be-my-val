@@ -44,7 +44,7 @@ export default function ThankYou({
         </motion.h1>
 
         <motion.h1 
-          className="text-3xl font-bold mb-4"
+          className="text-xl lg:text-3xl font-bold mb-4"
           style={{ color: colors.text }}
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -55,7 +55,7 @@ export default function ThankYou({
 
         {callGodMessage && (
           <motion.p 
-            className="text-2xl"
+            className="text-lg lg:text-2xl"
             style={{ color: colors.text }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
